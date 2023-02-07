@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <section>
+   <div class="container">
+    
+      <div class="card">
+        <div class="fcard">
+         <img src="images/bg-card-front.png" class="c-front" >
+         <img src="images/card-logo.svg"  id="logo" alt="">
+         <div class="c-data">
+          <p id="c-number" >0000 0000 0000 0000</p>
+          <p id="c-name">Max Mustermann</p>
+         </div>
+         <div class="c-date">
+          <p id="mm-card">00</p>
+          <p id="slash">/</p>
+          <p id="yy-card">26</p>
+         </div> 
+        </div>
+        <div class="backcard">
+         <img src="images/bg-card-back.png" class="bcard" alt="">
+         <p class="cvcc">123</p>
+        </div>
+      </div>
+    
+  
+     <div class="display-form">
+       <form class="form">
+         <div class="card-info1">
+           <label for="gird1"> Cardholder Name
+           <input type="text" class="grid1"  maxlength="50">
+           <span class="span-name"></span>
+           </label>
+           <label for="grid2">Card Number
+           <input type="text" class="grid2"  maxlength="19">
+           <span class="span-number"></span>
+           </label>
+         </div>
+         <div class="card-info2">
+           <label for="mm">MM
+           <input type="text" class="mm" maxlength="2" style="width:5rem" >
+           <span class="span-mmyy"></span>
+           </label>
+           <label for="yy">YY
+           <input type="text" class="yy" maxlength="2" style="width:5rem">
+           <span class="span-yy"></span>
+          </label>
+           <label for="cvc"> CVC
+           <input type="text" class="cvc" maxlength="3" style="width:5rem">
+           <span class="span-cvc"></span>
+          </label>
+          </div>
+          <input type="button" class="btn" value="Confim">
+        </form>
+      </div>
+        <div class="after-form">
+          <img src="/images/icon-complete.svg" style="width:100px; margin: auto;" alt="">
+           <h1 id="h-after">THANK YOU!</h1>
+           <p id="p-after">We´ve added your card details. <p>
+            <button id="contine" >contine</button>
+        </div>
+      
+    <script src="app.js"></script>
+</body>
+</html>
