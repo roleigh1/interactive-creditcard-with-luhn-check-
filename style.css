@@ -149,7 +149,11 @@ input[type=text] {
        flex-direction: column;
        gap: 10rem;
        place-items: center;
+       overflow:hidden;
        margin: auto;
+      }
+      section {
+       overflow:hidden;
       }
       .card {
         position: relative;
