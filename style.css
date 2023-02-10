@@ -199,6 +199,7 @@ input[type=text] {
     
        .backcard {
         position: relative;
+        top:1rem;
         left: 2rem;
         z-index: 0;
         
