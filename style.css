@@ -140,7 +140,7 @@ input[type=text] {
 @media screen and (max-device-width:900px) {
     body {
         overflow-x: hidden;
-        overflow-x:hidden; 
+
         padding: 0;
         margin: 0;
         max-width: auto;
