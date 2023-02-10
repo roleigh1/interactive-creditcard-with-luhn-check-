@@ -129,7 +129,7 @@ input[type=text] {
     background-color:rgb(12, 12, 66);
     color:white;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1rem;
+    font-size: 1rem;    
     margin-top: 1rem;
 }
 #p-after {
@@ -137,24 +137,29 @@ input[type=text] {
     margin-top: 1rem;
     text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-device-width:900px) {
     body {
-        overflow: hidden;
-        Box-sizing:border-box;
+        overflow-x: hidden;
+        overflow-x:hidden; 
+        padding: 0;
+        margin: 0;
+        max-width: auto;
+       
         background-image: url("images/bg-main-mobile.png");
         background-size: 100% 15%;
       
+    }
+    section {
+        height: 50rem;
+        overflow: hidden;
     }
     .container {
        display: flex;
        flex-direction: column;
        gap: 10rem;
        place-items: center;
-       overflow:hidden;
        margin: auto;
-      }
-      section {
-       overflow:hidden;
+       
       }
       .card {
         position: relative;
@@ -194,7 +199,6 @@ input[type=text] {
     
        .backcard {
         position: relative;
-        top: -0.5rem;
         left: 2rem;
         z-index: 0;
         
@@ -220,27 +224,33 @@ input[type=text] {
       .form { 
         display: flex;
         margin: auto;
-        
+        height: 100%;
         grid-area: form;
         place-items: center;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
+        position: relative;
+        bottom: 1rem;
+        
     }
      input[type=text] {
         
         width:20rem;
      }
      .card-info1 {
-        gap: 2.5rem;
+        gap: 2rem;
      }
      .card-info2 {
-        column-gap: 2rem;
+        column-gap: 1rem;
      }
      .btn {
         width:20rem;
      }
      .display-form {
         display: block;
+     }
+     .after-form {
+        
      }
  
     
@@ -298,7 +308,7 @@ input[type=text] {
         width: 25rem;
     }
    .after-form {
-        margin-top: 20rem;
+        
    }
    .card-info1 {
     gap: 3rem;
