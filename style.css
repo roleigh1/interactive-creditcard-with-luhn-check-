@@ -115,6 +115,7 @@ input[type=text] {
    flex-direction: column;
    margin: auto;
    text-align: center;
+   margin-top: 18rem;
  
 
    
@@ -264,7 +265,7 @@ input[type=text] {
     }
   .container {
             display: grid; 
-            grid-template-columns: 1fr 1fr; 
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 1.2fr 1fr 1fr; 
             gap: 0px 0px; 
             grid-template-areas: 
